@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <!--Navigation bar-->
+        <div id="nav-placeholder"></div>
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script>
+            $.get("../pages/navbar1.html", function(data){
+                $("#nav-placeholder").replaceWith(data);
+            });
+        </script>
+    <!--end of Navigation bar-->
+
+    <div>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore deserunt vel blanditiis asperiores facere fugiat eius ducimus, voluptas culpa placeat.
+        </p>
+    </div>
+
+       <!-- Forms -->
+   <form action="process.php" method="POST">
+    <fieldset>
+       <legend>Personal Information</legend>
+       <div>
+          <label>First Name</label>
+          <input type="text" name="firstName" placeholder="Enter first name">
+       </div>
+       <br>
+       <div>
+          <label>Last Name</label>
+          <input type="text" name="lastName" placeholder="Enter last name">
+       </div>
+       <br>
+       <div>
+          <label>Email</label>
+          <input type="email" name="fake@fake.com" placeholder="Enter your email">
+       </div>
+       <br>
+       <div>
+          <label>Pick a day:</label>
+          <input type="radio" name="options" checked> Mon
+          <input type="radio" name="options"> Tues
+          <input type="radio" name="options"> Wed
+          <input type="radio" name="options"> Thur
+          <input type="radio" name="options"> Fri
+       </div>
+       <br>
+       <div>
+          <label>Available time:</label>
+          <input type="checkbox" name="options"> Before School
+          <input type="checkbox" name="options" checked> Lunch
+          <input type="checkbox" name="options"> After School
+       </div>
+    </fieldset>
+    <br>
+    <div>
+       <label>Message</label>
+       <textarea name="message"></textarea>
+    </div>
+    <br>
+    <div>
+       <label>Gender</label>
+       <select name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+       </select>
+    </div>
+    <br>
+    <div>
+       <label>Age:</label>
+       <input type="number" name="age" value="30">
+    </div>
+    <br>
+    <div>
+       <label>Birthday:</label>
+       <input type="date" name="birthday">
+    </div>
+    <br>
+    <input type="submit" name="submit" value="Submit">
+ </form>
+
+</body>
+</html>

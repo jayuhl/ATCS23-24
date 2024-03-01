@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="../styles/project-style.css">
+</head>
+<body>
+    <!--Navigation bar-->
+        <div id="nav-placeholder"></div>
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script>
+            $.get("../pages/navbar1.html", function(data){
+                $("#nav-placeholder").replaceWith(data);
+            });
+        </script>
+    <!--end of Navigation bar-->
+
+    <div id="navbar">
+        <div class="left-nav-container">
+            <img src="../images/nemo1.jpeg" alt="Rightous!">
+            <p>juhl@pascack.org</p>
+        </div>
+    </div>
+
+    <div class=""page-num>
+        <p>Projects</p>
+    </div>
+</body>
+</html>
