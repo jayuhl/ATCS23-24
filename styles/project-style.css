@@ -11,6 +11,15 @@ body {
     background-color: var(--primary);
 }
 
+/* GENERIC CLASSES */
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .page-num {
     position: fixed;
     bottom: 0px;
@@ -22,24 +31,38 @@ body {
     margin: 5px;
 }
 
-#navbar {
+/* #navbar { THIS IS NOW IN THE flex-row CLASS
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-}
+} */
 
 #navbar .left-nav-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
     font-size: 12px;
 
     width: 40%;
 }
 
-#navnar .left-nav-container img {
-    width: 50px;
+#navbar .left-nav-container img {
+    width: 70px;
+}
+
+#navbar img {
+    background: none;
+    border: none;
+}
+
+.arrow-button:hover {
+    cursor: pointer;
+}
+
+.arrow-button {
+    background: none;
+    border: none;
+}
+
+.arrow-button img {
+    width: 40px;
+    height: 20px;
 }
